@@ -74,9 +74,22 @@
 			<section id="quemSomos" class="container">
 				<div class="quemSomos">
 					<span class="subTitulo">Quem Somos</span>
-					<div class="itemQuemSomos"></div>
-					<div class="itemQuemSomos"></div>
-					<div class="itemQuemSomos"></div>
+					<div class="itemQuemSomos" id="dbvIcon">
+						<img src="images/desbravadores.png"><br>
+						<span class="titleQuemSomos">
+							Desbravadores
+						</span>
+					</div>
+					<div class="itemQuemSomos" id="maranataIcon"><img src="images/maranata.png"><br>
+						<span class="titleQuemSomos">
+							Maranata
+						</span>
+					</div>	
+					<div class="itemQuemSomos" id="advIcon"><img src="images/adv.png"><br>
+						<span class="titleQuemSomos">
+							Adventistas
+						</span>
+					</div>	
 				</div>
 			</section>
 			<section id="materiais" class="container">
@@ -136,6 +149,27 @@
 				singleItem: true,
 				autoplayHoverPause: true
 			})
+
+			$("#dbvIcon").mouseenter(function(){       
+	            $("img",this).attr('src','images/desbravadoresColor.png');      
+		    });     
+		    $("#dbvIcon").mouseleave(function(){       
+		        $("img",this).attr('src','images/desbravadores.png');      
+		    });
+
+		    $("#maranataIcon").mouseenter(function(){       
+	            $("img",this).attr('src','images/maranataColor.png');      
+		    });     
+		    $("#maranataIcon").mouseleave(function(){       
+		        $("img",this).attr('src','images/maranata.png');      
+		    });
+
+		    $("#advIcon").mouseenter(function(){       
+	            $("img",this).attr('src','images/advColor.png');      
+		    });     
+		    $("#advIcon").mouseleave(function(){       
+		        $("img",this).attr('src','images/adv.png');      
+		    });
 		</script>
 	</body>
 </html>
