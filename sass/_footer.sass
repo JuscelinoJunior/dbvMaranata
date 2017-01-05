@@ -1,0 +1,28 @@
+footer
+	background-color: $primary-color
+	margin-top: 30px
+	font-size: 20px
+	font-family: $font-main
+	color: $tertiary-color
+	#conteudoFooter
+		padding-top: 30px
+		padding-bottom: 30px
+		@media screen and(max-width: 768px)
+			text-align: center
+		img
+			+make-sm-column(12)
+			+make-md-column(3)
+		#end
+			+make-sm-column(12)
+			+make-md-column(3)
+			+make-md-column-offset(1)
+		#links
+			+make-sm-column(12)
+			+make-md-column(3)
+			+make-md-column-offset(1)
+			ul>li 
+				list-style: none	
+			h3
+				text-transform: uppercase
+				text-align: center
+				margin-top: 0		
