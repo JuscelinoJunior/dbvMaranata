@@ -180,6 +180,16 @@
 				event.preventDefault();
 				$("html, body").animate({scrollTop:$(this.hash).offset().top}, 1500);
 			})
+
+			$(window).scroll(function(){
+				var scrollTopAtual = $(this).scrollTop();
+				if(scrollTopAtual > 250){
+					$('#menu').addClass('navbar-fixed-top');
+				}
+				else{
+					$('#menu').removeClass('navbar-fixed-top');
+				}
+			})
 		</script>
 	</body>
 </html>
