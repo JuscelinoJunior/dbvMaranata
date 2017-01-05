@@ -43,13 +43,13 @@
 
 						   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 						     <ul class="nav navbar-nav">
-						       <li><a href="#intro">Home</a></li>
+						       <li><a href="#slider">Home</a></li>
 						       <li><a href="#quemSomos">Quem Somos</a></li>
 						       <li><a href="#materiais">Materiais</a></li>
-						       <li><a href="#contato">Galeria</a></li>   
-						       <li><a href="#contato">Agenda</a></li> 
-						       <li><a href="#contato">Membros</a></li> 
-						       <li><a href="#contato">Mural</a></li> 	
+						       <li><a href="#galeria">Galeria</a></li>   
+						       <li><a href="#agenda">Agenda</a></li> 
+						       <li><a href="#">Membros</a></li> 
+						       <li><a href="#">Mural</a></li> 	
 						     </ul>
 						     <ul class="nav navbar-nav navbar-right">
 						       <li><a href="#intro"><span class="fa fa-youtube-play"></span></a></li>
@@ -170,6 +170,16 @@
 		    $("#advIcon").mouseleave(function(){       
 		        $("img",this).attr('src','images/adv.png');      
 		    });
+
+		    $("ul.navbar-nav > li > a").on("click", function(event){
+				event.preventDefault();
+				$("html, body").animate({scrollTop:$(this.hash).offset().top}, 1500);
+			})
+
+			$("#intro a").on("click", function(event){
+				event.preventDefault();
+				$("html, body").animate({scrollTop:$(this.hash).offset().top}, 1500);
+			})
 		</script>
 	</body>
 </html>
