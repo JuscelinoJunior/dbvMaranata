@@ -1,0 +1,40 @@
+#materiais
+	.materiais
+		margin-top: 30px
+		.subTitulo
+			font-family: $font-main
+			font-size: 30px
+			&:after
+				content: ""
+				display: table
+				width: 220px
+				height: 3px
+				background-color: $secondary-color
+		.itemMateriais
+			+make-sm-column(6)
+			+make-md-column(3)
+			height: 200px
+			background-color: $gray	
+			margin-top: 30px
+			margin-bottom: 30px
+			background-clip: content-box
+			&:hover
+				background-color: $secondary-color
+			.txtMateriais
+				width: 100%
+				margin-top: 40px
+				text-align: center
+				font-size: 35px
+				font-family: $font-main
+			.baixar
+				text-transform: uppercase
+				border: solid 2px
+				width: 30%
+				font-size: 16px	
+				padding: 5px
+				text-align: center
+				margin-left: 60%
+				&:hover
+					background-color: $primary-color
+					color: $tertiary-color
+					border-color: $primary-color
