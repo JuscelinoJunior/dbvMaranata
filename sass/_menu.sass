@@ -8,6 +8,11 @@
 			border-radius: 0
 			border: none
 			margin-bottom: 0
+			.navbar-brand
+				@media screen and(min-width: 768px)
+					display: none
+				a
+					color: $tertiary-color	
 			.collapse
 				text-align: center
 			li
@@ -16,7 +21,7 @@
 					font-family: $font-main
 					font-size: 20px
 					@media screen and(max-width: $tablet)
-						font-size: 15px
+						font-size: 10px
 					&:hover
 						color: $primary-color
 				&:hover
