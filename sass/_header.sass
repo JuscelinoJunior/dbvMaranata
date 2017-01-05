@@ -1,1 +1,43 @@
-
+header
+	padding-top: 10px
+	padding-bottom: 10px
+	.content
+		+make-md-column(12)
+		.logo-container	
+			+make-xs-column(12)
+			+make-sm-column(4)
+			+make-md-column(3)
+			img
+				@media screen and(max-width: $celular)
+					margin: 0 auto	
+		#txtTop
+			+make-xs-column(12)
+			+make-sm-column(8)
+			+make-md-column(9)
+			font-size: 80px
+			text-transform: uppercase
+			font-family: $font-main
+			color: $secondary-color
+			line-height: 30px
+			text-align: center
+			padding-top: 10%
+			@media screen and(max-width: $tablet)
+				font-size: 50px
+				line-height: 15px
+			@media screen and(max-width: $tablet)
+				font-size: 40px
+				line-height: 15px	
+			#txtAcima
+				font-size: 22px
+				margin-left: 35px
+				@media screen and(max-width: $tablet)
+					font-size: 13px
+					margin-left: 25px
+				@media screen and(max-width: $celular)
+					display: none
+			.aumentaFonte
+				font-size: 120px
+				@media screen and(max-width: $tablet)
+					font-size: 80px
+				@media screen and(max-width: $celular)
+					font-size: 40px
